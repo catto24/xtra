@@ -3,41 +3,34 @@
 		<title>XTRA</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-			#counter {
-				text-align: center;
-				margin-bottom: 10px; /* Adjust as needed */
-			}
-		</style>
 	</head>
 	<body vlink="#FFFFFF" text="#FFFFFF" link="#FFFFFF" bgcolor="#0202ff" alink="#FFFFFF">
 		<font size="5" face="Sans Serif">
 			<h2>XTRA</h2>
 			<p>i honestly don't know why i made this</p>
+			<br>
+			<a href="joebrittlore.html">
+				<img src="boejritt.jpg">
+			</a>
+			<a href="furrytv.html">
+				<img src="crt.jpg">
+			</a>
+			<div id="container">
+			<div id="counter"></div>
+			</div>
+			<script>
+				if (!localStorage.getItem('visitCount')) {
+					localStorage.setItem('visitCount', 0);
+				}
+
+				var count = parseInt(localStorage.getItem('visitCount'));
+				count++;
+				localStorage.setItem('visitCount', count);
+	
+				var counterDiv = document.getElementById('counter');
+				counterDiv.innerHTML = 'Visits: ' + count;
+			</script>
 		</font>
-		<br>
-		<a href="joebrittlore.html">
-			<img src="boejritt.jpg">
-		</a>
-		<a href="furrytv.html">
-			<img src="crt.jpg">
-		</a>
-		<div id="container">
-        <div id="counter"></div>
-        <img src="counter.gif">
-		</div>
-		<script>
-			if (!localStorage.getItem('visitCount')) {
-				localStorage.setItem('visitCount', 0);
-			}
-
-			var count = parseInt(localStorage.getItem('visitCount'));
-			count++;
-			localStorage.setItem('visitCount', count);
-
-			var counterDiv = document.getElementById('counter');
-			counterDiv.innerHTML = 'Visits: ' + count;
-		</script>
 		<br>
 		<br>
 		<br>
