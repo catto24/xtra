@@ -8,16 +8,19 @@
 		<font size="5" face="Sans Serif">
 			<h2>XTRA</h2>
 			<p>i honestly don't know why i made this</p>
-			<br>
-			<a href="joebrittlore.html">
-				<img src="boejritt.jpg">
-			</a>
-			<a href="furrytv.html">
-				<img src="crt.jpg">
-			</a>
-			<div id="container">
-			<div id="counter"></div>
-			</div>
+		</font>
+		<br>
+		<a href="joebrittlore.html">
+			<img src="boejritt.jpg">
+		</a>
+		<a href="furrytv.html">
+			<img src="crt.jpg">
+		</a>
+		<br>
+		<div id="container">
+        <div id="counter"></div>
+		</div>
+		<font size="3" face="Sans Serif">
 			<script>
 				if (!localStorage.getItem('visitCount')) {
 					localStorage.setItem('visitCount', 0);
@@ -26,7 +29,7 @@
 				var count = parseInt(localStorage.getItem('visitCount'));
 				count++;
 				localStorage.setItem('visitCount', count);
-	
+
 				var counterDiv = document.getElementById('counter');
 				counterDiv.innerHTML = 'Visits: ' + count;
 			</script>
